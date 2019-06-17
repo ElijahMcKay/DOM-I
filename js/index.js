@@ -60,7 +60,7 @@ topImg.src = 'img/header-img.png';
 
 let topH1 = document.querySelector('h1'); 
 
-topH1.textContent = 'DOM\nIS\nAWESOME';
+topH1.innerHTML = 'DOM<br>IS<br>AWESOME';
 
 // Button
 
@@ -88,5 +88,20 @@ midSectionContent[1].textContent = siteContent['main-content']['about-content'];
 let midImg = document.getElementById('middle-img'); 
 midImg.src = siteContent['main-content']['middle-img-src']; 
 
+// =============== Bottom Content ================
 
+let bottomHeader = document.querySelector('.contact h4'); 
+let bottomContent = document.querySelectorAll('.contact p')
+
+// Header 
+bottomHeader.textContent = siteContent['contact']['contact-h4']; 
+bottomContent[0].textContent = siteContent['contact']['address']; 
+bottomContent[1].textContent = siteContent['contact']['phone']; 
+bottomContent[2].textContent = siteContent['contact']['email']; 
+
+
+// ================== Footer ==================
+
+let copy = document.querySelector('footer p'); 
+copy.textContent = siteContent['footer']['copyright']; 
 
