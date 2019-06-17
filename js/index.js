@@ -51,6 +51,23 @@ topNav[3].textContent = siteContent['nav']['nav-item-4'];
 topNav[4].textContent = siteContent['nav']['nav-item-5'];
 topNav[5].textContent = siteContent['nav']['nav-item-6'];
 
+// ==== Attempting Part 3 ====
+
+const addNav = document.querySelector('nav')
+
+let blog = document.createElement('a'); 
+blog.textContent = "Blog"; 
+
+let home = document.createElement('a'); 
+home.textContent = "Home"; 
+
+addNav.appendChild(blog); 
+addNav.prepend(home); 
+
+
+topNav.forEach(a => a.style.color = 'green'); 
+
+
 // Top Image
 
 let topImg = document.getElementById('cta-img'); 
