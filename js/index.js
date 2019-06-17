@@ -57,13 +57,14 @@ const addNav = document.querySelector('nav')
 
 let blog = document.createElement('a'); 
 blog.textContent = "Blog"; 
+blog.style.color = 'green'; 
 
 let home = document.createElement('a'); 
 home.textContent = "Home"; 
+home.style.color = 'green'; 
 
 addNav.appendChild(blog); 
 addNav.prepend(home); 
-
 
 topNav.forEach(a => a.style.color = 'green'); 
 
