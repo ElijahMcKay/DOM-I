@@ -43,9 +43,50 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const topNav = document.querySelectorAll('nav a');
 
-a[0].textContent = siteContent.nav.nav-item-1; 
-a[1].textContent = 
-a[2].textContent =
-a[3].textContent =
-a[4].textContent =
-a[5].textContent =
+topNav[0].textContent = siteContent['nav']['nav-item-1']; 
+topNav[1].textContent = siteContent['nav']['nav-item-2'];
+topNav[2].textContent = siteContent['nav']['nav-item-3'];
+topNav[3].textContent = siteContent['nav']['nav-item-4'];
+topNav[4].textContent = siteContent['nav']['nav-item-5'];
+topNav[5].textContent = siteContent['nav']['nav-item-6'];
+
+// Top Image
+
+let topImg = document.getElementById('cta-img'); 
+
+topImg.src = 'img/header-img.png'; 
+
+// h1
+
+let topH1 = document.querySelector('h1'); 
+
+topH1.textContent = 'DOM\nIS\nAWESOME';
+
+// Button
+
+let topButton = document.querySelector('button'); 
+
+topButton.textContent = 'Get Started'; 
+
+// ================= Middle Section ==================
+
+let midSectionHeader = document.querySelectorAll('.top-content h4'); 
+let midSectionContent = document.querySelectorAll('.top-content p'); 
+
+// Features
+
+midSectionHeader[0].textContent = siteContent['main-content']['features-h4']; 
+midSectionContent[0].textContent = siteContent['main-content']['features-content']; 
+
+// About 
+
+midSectionHeader[1].textContent = siteContent['main-content']['about-h4']; 
+midSectionContent[1].textContent = siteContent['main-content']['about-content'];
+
+// ================== Middle Image =================
+
+let midImg = document.getElementById('middle-img'); 
+midImg.src = siteContent['main-content']['middle-img-src']; 
+
+
+
